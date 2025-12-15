@@ -1,3 +1,16 @@
+.home-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.home-root {
+  flex: 1;
+  padding: 24px;
+  box-sizing: border-box;
+  color: #e5e7eb; /* <-- importante si usas cards oscuras */
+  background: var(--color-background); /* opcional, pero suele verse mejor */
+}
+
 .home-header {
   margin-bottom: 2rem;
 }

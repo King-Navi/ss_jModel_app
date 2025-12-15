@@ -1,0 +1,118 @@
+/* Hamburger button (top-right) */
+.rp-hamburger {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--color-background_second);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.rp-hamburger__line {
+  width: 18px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.75);
+  display: block;
+}
+
+/* Backdrop */
+.rp-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+  z-index: 1000;
+}
+
+.rp-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Drawer (right panel) */
+.rp-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px;
+  background: var(--color-background_second);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 180ms ease;
+  z-index: 1002;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rp-drawer.is-open {
+  transform: translateX(0);
+}
+
+.rp-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rp-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.rp-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.rp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.rp-section__title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.rp-section__text {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.rp-link {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: inherit;
+}
+
+.rp-link.is-active {
+  font-weight: 600;
+}

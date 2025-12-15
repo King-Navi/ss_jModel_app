@@ -1,10 +1,9 @@
-import { Home } from "./app/Home/Home";
-import { SettingsPage } from "./app/Setting/SettingsPage";
+import { Home } from "./app/Home/pages/Home";
+import { SettingsPage } from "./app/Setting/pages/SettingsPage";
 import { RunModelPage } from "./app/RunModel/RunModelPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>

@@ -3,11 +3,54 @@
   width: 100%;
   box-sizing: border-box;
   padding: 2rem;
-  
   display: flex;
   flex-direction: column;
-  background: #0f172a;
-  color: #e5e7eb;
-
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color--text);
+}
+
+
+:root[data-theme="dark-theme"] {
+  --color-background: #0f172a;
+  --color-background_second: #1b2a4d;
+  --color-card: #0f172a;
+  --color-border: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color--text: #e5e7eb;
+  --color-background3: #383939;
+  --color-background4: #094930;
+  --color-background5: #12491e;
+  --color-background6: #374910;
+  --color-background7: #fffedb;
+}
+
+:root[data-theme="nvidia-theme"] {
+  --color-background: #383939;
+  --color-background_second: #525353;
+
+  --color-card: #003603;
+  --color-border: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color--text: #e5e7eb;
+
+
+  --color-background2: #149c68;
+  --color-background3: #38c958;
+  --color-background4: #aee637;
+  --color-background5: #fffedb;
+}
+
+:root {
+  --color-background: #0f3479;
+  --color-background_second: #203f79;
+  
+  --color-card: #1246a7;
+  --color-border: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color--text: #000000;
+
 }

@@ -1,0 +1,12 @@
+.back-home-btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  color: var(--color--text);
+  cursor: pointer;
+}
+
+.back-home-btn:hover {
+  background: var(--color-background_second);
+}
